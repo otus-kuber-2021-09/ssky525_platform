@@ -9,7 +9,7 @@ ARG nginx_uid=1001
 RUN mkdir /app
 
 COPY nginx.conf /etc/nginx/
-COPY web/app/homework.html /app
+COPY app/homework.html /app
 RUN usermod -u $nginx_uid -o nginx           && \
     groupmod -g $nginx_gid -o nginx          && \
     chown -R nginx:nginx /app 
