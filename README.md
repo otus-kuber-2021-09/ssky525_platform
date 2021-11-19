@@ -6,3 +6,6 @@
 	Для запуска контейнера используем команду:
 		docker run -d -p 8000:80 --name nginx1 nginx:01
 	URL http://localhost:8000/homework.html доступен.
+	Описал манифест web-pod.yaml
+	В манифест web-pod.yaml добавил описание init-контейнер
+	В манифест web-pod.yaml добавил описние volume
