@@ -1,6 +1,6 @@
 # ДЗ 1
 	Установлен Minikube, kubectl, k9s. dashboard. Настроено автодополнение. Minikube работает.
-	Minikube проверен на отказоустойчивость. Pod в namespace --kube-system восстановились после удаления. Кластер кубера управляет core-dns через ReplicaSet. Сам Kubelet восстанавливает pod, т.к. он отвечает за выполнение POD на узле.
+	Minikube проверен на отказоустойчивость. Pod в namespace --kube-system восстановились после удаления. Кластер кубера управляет core-dns через ReplicaSet. Сам Kubelet восстанавливает pod, т.к. он отвечает за выполнение POD на узле. Kubelet запускает pod согласно манифестам расположенных в /etc/kubernetes/manifests/. Среди них есть и kube-apiserver
 	
 	Описан Dockerfile, который запускает web-сервер на порту 8000.
 	Собираем образ:
