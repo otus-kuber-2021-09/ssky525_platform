@@ -6,8 +6,9 @@
 	Собираем образ:
 		docker build -t nginx:01
 	Для запуска контейнера используем команду:
-		docker run -d -p 8000:80 --name nginx1 nginx:01
+		docker run -d -p 8000:8000 --name nginx1 nginx:02
 	URL http://localhost:8000/homework.html доступен.
 	Описал манифест web-pod.yaml
 	В манифест web-pod.yaml добавил описание init-контейнер
 	В манифест web-pod.yaml добавил описние volume
+	После запуска команды kubectl port-forward --address 0.0.0.0 pod/web 8000:8000 nginx доступен по адресу: http://localhost:8000
