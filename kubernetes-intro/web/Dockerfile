@@ -5,7 +5,7 @@ MAINTAINER Pavel Petrovichev "pavel.petrovichev@gmail.com"
 RUN mkdir /app
 RUN usermod -u 1001 nginx
 
-COPY app/homework.html /app/
+COPY homework.html /app
 COPY default.conf /etc/nginx/conf.d/
 
 EXPOSE 8000
