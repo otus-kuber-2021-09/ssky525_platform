@@ -7,7 +7,7 @@ metadata:
 spec: # Описание Pod
  containers: # Описание контейнеров внутри Pod
  - name: web # Название контейнера
-   image: ssky525/otus:nginx02 # Образ из которого создается контейнер
+   image: ssky525/otus:nginx05 # Образ из которого создается контейнер
    volumeMounts:
    - name: app
      mountPath: /app
